@@ -7,11 +7,11 @@
   "scripts": {
     "dev": "electron .",
     "publish": "build --linux -p always",
-    "pack": "rm -rf release && electron-builder --dir",
-    "package:mac": "rm -rf release && electron-builder --mac",
-    "package:linux": "rm -rf release && electron-builder --linux",
-    "package:win64": "rm -rf release && electron-builder --win --x64",
-    "package:win32": "rm -rf release && electron-builder --win --ia32",
+    "pack": "rm -rf dist && electron-builder --dir",
+    "package:mac": "rm -rf dist && electron-builder --mac",
+    "package:linux": "rm -rf dist && electron-builder --linux",
+    "package:win64": "rm -rf dist && electron-builder --win --x64",
+    "package:win32": "rm -rf dist && electron-builder --win --ia32",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
@@ -19,7 +19,7 @@
     "appId": "com.github.fushenguang.cogito",
     "copyright": "Copyright © 2019 FuJia.Inc",
     "directories": {
-      "output": "release"
+      "output": "dist"
     },
     "publish": [
       {
